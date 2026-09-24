@@ -1,0 +1,7 @@
+{
+  "name": "KisanMitra • किसान मित्र",
+  "description": "स्मार्ट फसल रोग पहचान और उपचार सहायता (AI Crop Disease Diagnostic & Treatment Guide for Farmers)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

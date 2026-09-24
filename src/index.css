@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-surface: #fafaf4;
+  --color-surface-dim: #dadad5;
+  --color-surface-bright: #fafaf4;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f4ee;
+  --color-surface-container: #eeeee8;
+  --color-surface-container-high: #e8e8e3;
+  --color-surface-container-highest: #e3e3dd;
+  --color-on-surface: #1a1c19;
+  --color-on-surface-variant: #42493f;
+  --color-inverse-surface: #2f312d;
+  --color-inverse-on-surface: #f1f1eb;
+  --color-outline: #72796f;
+  --color-outline-variant: #c2c9bc;
+  --color-surface-tint: #3c683b;
+  --color-primary: #164219;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #2e5a2e;
+  --color-on-primary-container: #9ed098;
+  --color-inverse-primary: #a1d39b;
+  --color-secondary: #3a693c;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #bbf0b7;
+  --color-on-secondary-container: #406f41;
+  --color-tertiary: #602900;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #843b00;
+  --color-on-tertiary-container: #ffb183;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #bdf0b6;
+  --color-primary-fixed-dim: #a1d39b;
+  --color-on-primary-fixed: #002204;
+  --color-on-primary-fixed-variant: #245025;
+  --color-secondary-fixed: #bbf0b7;
+  --color-secondary-fixed-dim: #a0d39d;
+  --color-on-secondary-fixed: #002105;
+  --color-on-secondary-fixed-variant: #225026;
+  --color-tertiary-fixed: #ffdbc9;
+  --color-tertiary-fixed-dim: #ffb68c;
+  --color-on-tertiary-fixed: #321200;
+  --color-on-tertiary-fixed-variant: #753400;
+  --color-background: #fafaf4;
+  --color-on-background: #1a1c19;
+  --color-surface-variant: #e3e3dd;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.25rem;
+  --spacing-gutter: 1rem;
+  --spacing-margin: 1.25rem;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafaf4;
+    color: #1a1c19;
+    font-family: 'Noto Sans', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+/* Material Symbols sizing helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar hiding */
+::-webkit-scrollbar {
+  display: none;
+}
